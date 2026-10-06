@@ -1,0 +1,103 @@
+<!-- Barra Superior -->
+<app-navbar></app-navbar>
+
+<!-- Conteúdo Principal -->
+<main class="relative pb-32">
+  
+  <!-- Hero Section Multiversal -->
+  <app-hero></app-hero>
+
+  <!-- Catálogo de Sobrecarga de Realidades -->
+  <app-catalog></app-catalog>
+
+  <!-- Seção: Como Funciona o Multiverso e as 6 Dimensões -->
+  <app-mastermind-pillars></app-mastermind-pillars>
+
+  <!-- Seção: Depoimentos de Viajantes do Multiverso -->
+  <section id="depoimentos" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3b82f6]/15 border border-[#3b82f6]/30 text-[#3b82f6] font-mono text-xs uppercase tracking-wider">
+          <span>Relatos de Observadores</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-white">
+          Experiências em <span class="holo-text">Linhas Paralelas</span>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="glass-panel rounded-3xl p-6 border border-white/10 space-y-4">
+          <div class="flex items-center gap-3">
+            <app-googly-eye [size]="30" [pair]="true"></app-googly-eye>
+            <div>
+              <h4 class="font-bold text-sm text-white">Evelyn Wang</h4>
+              <p class="text-[10px] font-mono text-[#d946ef] uppercase tracking-wider">Terra-042 // Universo dos Olhos</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+            "Comprei o isqueiro do Universo Aquático. É fascinante apagar pequenos focos de calor com um jato cristalino a -4°C sob pressão."
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-3xl p-6 border border-white/10 space-y-4">
+          <div class="flex items-center gap-3">
+            <app-googly-eye [size]="30" [pair]="true"></app-googly-eye>
+            <div>
+              <h4 class="font-bold text-sm text-white">Waymond Ribeiro</h4>
+              <p class="text-[10px] font-mono text-[#06b6d4] uppercase tracking-wider">Terra-831 // Universo Térmico</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+            "A caneca de congelamento absoluto mantém bebidas geladas por semanas gerando uma nevasca em miniatura na mesa do escritório."
+          </p>
+        </div>
+
+        <div class="glass-panel rounded-3xl p-6 border border-white/10 space-y-4">
+          <div class="flex items-center gap-3">
+            <app-googly-eye [size]="30" [pair]="true"></app-googly-eye>
+            <div>
+              <h4 class="font-bold text-sm text-white">Joy Jobu</h4>
+              <p class="text-[10px] font-mono text-[#eab308] uppercase tracking-wider">Dimensão Fractal Alfa</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+            "Os óculos com visão do passado imediato mostram o replay do que ocorreu 5 segundos atrás. Uma peça conceitual de precisão impecável."
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="mt-20 border-t border-white/10 pt-12 pb-16 bg-[#06040d]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs font-mono text-slate-400">
+      <div class="flex items-center gap-3">
+        <app-googly-eye [size]="30" [pair]="true"></app-googly-eye>
+        <span>QUANTUMBAZAAR. OBJETOS DO COTIDIANO EM REALIDADES PARALELAS.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#hero" class="hover:text-white transition-colors">Início</a>
+        <a href="#catalogo" class="hover:text-white transition-colors">Catálogo</a>
+        <a href="#dimensoes" class="hover:text-white transition-colors">Dimensões</a>
+        <span class="text-[#d946ef]">Linha Temporal: 2026</span>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- Modais & Gavetas -->
+<app-auth-modal></app-auth-modal>
+<app-quick-view-modal></app-quick-view-modal>
+<app-cart-drawer></app-cart-drawer>
+<app-checkout-modal></app-checkout-modal>
+
+<!-- Dock Flutuante Inferior -->
+<app-floating-dock></app-floating-dock>
+
+<!-- Notificações Toast -->
+<app-toast></app-toast>
